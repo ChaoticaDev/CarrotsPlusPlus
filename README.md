@@ -71,4 +71,5 @@ Creating data is achieved easily via:
 ` data["data"]["apptitle"] = "Hello World"; //data is a global variable`
 
 > HTML TEMPLATE/MARKUP
+
 ` <html><head><title>{{data.apptitle}}</title></head></html> ` <-- Would set page title: "Hello World"

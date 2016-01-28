@@ -33,7 +33,9 @@ If you use a version of Visual Studio (which is required) other than 2010, you s
 
 # ( Linux Dependencies )
  *MYSQL: apt-get install mysql
+ 
  *g++: apt-get install g++
+ 
  gcc: apt-get install gcc
 
 ## Carrots++ Markup Language

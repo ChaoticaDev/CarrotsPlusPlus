@@ -64,12 +64,12 @@ Data is mapped as `variable_name[name][class]`.
 Creating data is achieved easily via:
 > Carrots
 
-` <data name="data" class="apptitle" value="Hello World" /> `
+> ` <data name="data" class="apptitle" value="Hello World" /> `
 
 > C/C++
 
-` data["data"]["apptitle"] = "Hello World"; //data is a global variable`
+> ` data["data"]["apptitle"] = "Hello World"; //data is a global variable`
 
 > HTML TEMPLATE/MARKUP
 
-` <html><head><title>{{data.apptitle}}</title></head></html> ` <-- Would set page title: "Hello World"
+> ` <html><head><title>{{data.apptitle}}</title></head></html> ` <-- Would set page title: "Hello World"

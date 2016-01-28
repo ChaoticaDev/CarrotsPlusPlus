@@ -56,3 +56,19 @@ LINUX:PHP=60x
 WINDOWS:PHP=30x -- Windows will be up to speed very soon!
 
 Checkout the sample code!
+
+# Passing data from executable to Template Engine.
+Data is stored in the element `<appdata name="data" />`. You may create additional containers.
+Data is mapped as `variable_name[name][class]`. 
+
+Creating data is achieved easily via:
+> Carrots
+
+` <data name="data" class="apptitle" value="Hello World" /> `
+
+> C/C++
+
+` data["data"]["apptitle"] = "Hello World"; //data is a global variable`
+
+> HTML TEMPLATE/MARKUP
+` <html><head><title>{{data.apptitle}}</title></head></html> ` <-- Would set page title: "Hello World"

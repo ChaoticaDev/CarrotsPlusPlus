@@ -43,7 +43,9 @@ If you use a version of Visual Studio (which is required) other than 2010, you s
 ` https://domain.com/cppprog1/index.php?compile=2`
 
 LINUX RUNS AT 2X THE SPEED OF WINDOWS.
+
 LINUX:PHP=60x
+
 WINDOWS:PHP=30x -- Windows will be up to speed very soon!
 
 Checkout the sample code!

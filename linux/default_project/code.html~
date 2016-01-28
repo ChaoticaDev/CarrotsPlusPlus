@@ -1,0 +1,47 @@
+<ubersnip>
+  <link class="ext_head" href="stdio.h" />
+  <link class="ext_head" href="stdlib.h" />
+  <link class="ext_head" href="cstdlib" />
+  <link class="ext_head" href="string.h" />
+  <link class="ext_head" href="iostream" />
+  <link class="ext_head" href="fstream" />
+  <link class="ext_head" href="sstream" />
+  <link class="ext_head" href="string" />
+  <link class="ext_head" href="map" />
+  <link class="ext_head" href="my_global.h" />
+  <link class="ext_head" href="mysql.h" />
+
+  <appdata name="data" />
+
+  <link href="templating_engine.h" />
+  <link href="mysql_res_json.h" />
+
+  <form name="getTitle" class="char*">
+    <return class="string" value="Carrots v.0.0.1"/>
+  </form>
+
+  <form name="main" class="int">
+    <input id="param" name="argc" class="int" />
+    <input id="param" name="argv[]" class="char*" />
+
+    <div class="string" name="hello" value="Hi!" />
+
+    <data name="data" class="Kenneth->id" data-value="getTitle();" />
+    <data name="data" class="apptitle" value="Hello World" />
+
+    <update name="program_template_code" value="argv[2]" />
+
+    <div class="string" name="query" value="SELECT * FROM tracks" />
+    
+    
+    <execute function="printf" params="hello.c_str()" />
+    <data name="data" class="MYSQL->tracks" data-value="mysql_res_json(query).c_str()" />
+
+    <execute function="preg_template_contents" />
+    <return value="1" />
+  </form>
+</ubersnip>
+
+<html>
+    {{data.MYSQL->tracks}}
+</html>

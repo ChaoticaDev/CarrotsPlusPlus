@@ -1,0 +1,17 @@
+<ubersnip>
+<block name="myFirstBlock">
+  <div class="string" name="query" value="SELECT * FROM tracks" />
+  <data name="data" class="MYSQL->tracks" data-value="mysql_res_json(query).c_str()" />
+</block>
+
+<template from="results">
+
+  <div id="ID"></div>
+  <div id="track_description"></div>
+  <div id="track_title"></div>
+  <div id="UID"></div>
+  
+</template>
+  
+
+</ubersnip>

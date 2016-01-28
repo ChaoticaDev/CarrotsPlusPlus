@@ -1,0 +1,3 @@
+all:
+	g++ -w -g -Wall -I/home/montraydavis/ubr/include/mysqlconnectorc -I/ubr/include default_project/simple.cpp default_project/cJSON.c -o default_project/simple `mysql_config --cflags --libs`
+	

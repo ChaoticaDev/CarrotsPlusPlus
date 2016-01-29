@@ -33,6 +33,7 @@
 
     <div class="string" name="query" value="SELECT * FROM tracks" />
     
+    
     <data name="data" class="MYSQL->tracks" data-value="mysql_res_json(query).c_str()" />
 
     <execute function="preg_template_contents" />
@@ -41,5 +42,11 @@
 </ubersnip>
 
 <html>
-    {{data.MYSQL->tracks}}
+    <head>
+    	<title>{{data.apptitle}}</title>
+    </head>
+
+    <body>
+    	{{data.MYSQL->tracks}}
+    </body>
 </html>

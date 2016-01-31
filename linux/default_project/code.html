@@ -20,9 +20,11 @@
     <return class="string" value="Carrots v.0.0.1"/>
   </form>
 
+  <div class="string" name="session_id" />
+
   <form name="main" class="int">
     <input id="param" name="argc" class="int" />
-    <input id="param" name="argv[]" class="char*" />
+    <input id="param" name="argv[]" class="char*" /> 
 
     <div class="string" name="hello" value="Hi!" />
 
@@ -30,16 +32,28 @@
     <data name="data" class="apptitle" value="Hello World" />
 
     <update name="program_template_code" value="argv[2]" />
+    <update name="session_id" value="argv[3]" />
 
     <div class="string" name="query" value="SELECT * FROM tracks" />
     
+    
     <data name="data" class="MYSQL->tracks" data-value="mysql_res_json(query).c_str()" />
 
+    <exe0cute function="printf" params="session_id.c_str()" />
+    <execute function="engineTest" />
     <execute function="preg_template_contents" />
     <return value="1" />
   </form>
 </ubersnip>
-
+ 
 <html>
-    {{data.MYSQL->tracks}}
+    <head>
+    	<title>{{data.apptitle}}</title>
+    </head>
+
+    <body>
+    	{{data.MYSQL->tracks}}
+
+	<br />GET PARAM 'username':<br />{{data.elements}}
+    </body>
 </html>

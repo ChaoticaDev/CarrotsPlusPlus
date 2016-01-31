@@ -28,8 +28,15 @@ With three lines of HTML Markup code, we are able to extract an entire database,
   *JsonCPP : https://github.com/open-source-parsers/jsoncpp (If you plan on using JSON)
   
   *PHP : https://php.net/ : This project is a PHP plugin (sort of, but not realy?).
-
+ 
 If you use a version of Visual Studio (which is required) other than 2010, you should set the correct path in `cmd.ubr`, which is normally in the root directory.
+
+# ( Linux Dependencies )
+ *MYSQL: apt-get install mysql
+ 
+ *g++: apt-get install g++
+ 
+ gcc: apt-get install gcc
 
 ## Carrots++ Markup Language
   Carrots, in it's current state supports two flavors. The second thing, next to performance that we had in mind was simplicity. Should you choose not to, Carrots++ Markup Language allows you to easily harness the power of C++ -- without losing any performance. Our code is compiled to native C++ code. Especially great for those who are not up to coding/scripting. Now, you don't really have to.... Our Markup is so similar to HTML that you'll hardly know the difference. That means more output (with less work) from front-end developers. :D -- Documentation will be added as time allows via Wiki : https://github.com/UberSnip/CarrotsPlusPlus/wiki
@@ -49,3 +56,23 @@ LINUX:PHP=60x
 WINDOWS:PHP=30x -- Windows will be up to speed very soon!
 
 Checkout the sample code!
+
+# Passing data from executable to Template Engine.
+Data is stored in the element `<appdata name="data" />`. You may create additional containers.
+Data is mapped as `variable_name[name][class]`. 
+
+Creating data is achieved easily via:
+> Carrots
+
+> ` <data name="data" class="apptitle" value="Hello World" /> `
+
+> C/C++
+
+> ` data["data"]["apptitle"] = "Hello World"; //data is a global variable`
+
+> HTML TEMPLATE/MARKUP
+
+> ` <html><head><title>{{data.apptitle}}</title></head></html> ` <-- Would set page title: "Hello World"
+
+Test?
+> http://192.169.165.6/

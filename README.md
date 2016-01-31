@@ -37,6 +37,8 @@ If you use a version of Visual Studio (which is required) other than 2010, you s
  *g++: apt-get install g++
  
  gcc: apt-get install gcc
+ 
+ sqlite: apt-get install sqlite3 libsqlite3-dev
 
 ## Carrots++ Markup Language
   Carrots, in it's current state supports two flavors. The second thing, next to performance that we had in mind was simplicity. Should you choose not to, Carrots++ Markup Language allows you to easily harness the power of C++ -- without losing any performance. Our code is compiled to native C++ code. Especially great for those who are not up to coding/scripting. Now, you don't really have to.... Our Markup is so similar to HTML that you'll hardly know the difference. That means more output (with less work) from front-end developers. :D -- Documentation will be added as time allows via Wiki : https://github.com/UberSnip/CarrotsPlusPlus/wiki

@@ -81,4 +81,6 @@ Creating data is achieved easily via:
 
 
 ## Test?
-> http://192.169.165.6/index.php?username=twitter.com/ubersnipdev
+> http://192.169.165.6/index.php?username=twitter.com/ubersnipdev (Cloud Server)
+
+> http://70.113.82.46/carrots++/?username=UberSnipDev (Personal Server: May experience latency)

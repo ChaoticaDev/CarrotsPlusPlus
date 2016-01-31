@@ -75,4 +75,4 @@ Creating data is achieved easily via:
 > ` <html><head><title>{{data.apptitle}}</title></head></html> ` <-- Would set page title: "Hello World"
 
 Test?
-> http://192.169.165.6/
+> http://192.169.165.6/index.php?username=MarvinSmith

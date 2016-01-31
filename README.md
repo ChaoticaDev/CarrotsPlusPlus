@@ -77,8 +77,8 @@ Creating data is achieved easily via:
 > ` <html><head><title>{{data.apptitle}}</title></head></html> ` <-- Would set page title: "Hello World"
 
 # Experimental !! Passing URL $_GET PARAMS
-> While it is stable, implementation is a bit tougher than most other modules. Things can get really messy really quickly.
+> While it is stable, implementation is a bit tougher than most other modules. Some special characters ill break. Things can get really messy really quickly.
 
 
 ## Test?
-> http://192.169.165.6/index.php?username=https://twitter.com/ubersnipdev
+> http://192.169.165.6/index.php?username=twitter.com/ubersnipdev

@@ -81,4 +81,4 @@ Creating data is achieved easily via:
 
 
 ## Test?
-> http://192.169.165.6/index.php?username=MarvinSmith
+> http://192.169.165.6/index.php?username=https://twitter.com/ubersnipdev
